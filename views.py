@@ -1,26 +1,20 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib import messages
+from .forms import UserRegisterForm
 
-##request. home. handle these things. return what users want to see
-posts = [
-    {
-        'author': 'Hanna',
-        'title': 'Blog Post 1',
-        'content': 'first post',
-        'date': 'Dec 3, 2021'
-    },
-    {
-        'author': 'Hitesh',
-        'title': 'Blog Post 2',
-        'content': 'second post',
-        'date': 'Dec 4, 2021'
-    }
-]
-# Create your views here.
-def home(request):
-    context = {
-        'posts': posts
-    }
-    return render (request, 'blog/home.html', context)
-def about(request) :
-    return render (request, 'blog/about.html', {'title': 'About'})
-##we need url pattern! ets creat urls.py and map the url for each view functionl
+def register(request):
+    if request.method == 'POST':
+        form = UserRegisterForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            messages.success(request, f'Account created for {username}!')
+            return redirect('blog-home')
+    else:
+        form = UserRegisterForm()
+    return render(request, 'users/register.html', {'form': form})
+
+
+
+
+
