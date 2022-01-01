@@ -122,6 +122,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -130,6 +132,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 
 LOGIN_REDIRECT_URL = 'blog-home'
 LOGIN_URL = 'login'
@@ -143,17 +146,15 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-AWS_ACCESS_KEY_ID = os.environ.get('A_ACCESS')
-AWS_SECRET_ACCESS_KEY = os.environ.get('A_SEC_ACCESS')
+AWS_ACCESS_KEY_ID = os.environ.get('S3_ACCESS') #djangouser
+AWS_SECRET_ACCESS_KEY = os.environ.get('S3_SECRET_ACCESS')
 AWS_STORAGE_BUCKET_NAME = os.environ.get('BUCKET')
 AWS_QUERYSTRING_AUTH = False
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
+AWS_S3_REGION_NAME = 'ap-northeast-2' # Your region name
 
-
-
-
-
+AWS_S3_SIGNATURE_VERSION = 's3v4'
 
 
 
