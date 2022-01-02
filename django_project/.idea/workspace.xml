@@ -7,9 +7,10 @@
     <list default="true" id="87043f7f-87b1-44f9-975d-41bf7e370655" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/static/blog/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/static/blog/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/static/blog/main.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/django_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +54,29 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/untitled/practice 1.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog/templates/blog/static" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="django_project" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="django_project" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Documents\GitHub\django_blog\django_project\blog\templates\blog\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Documents\GitHub\django_blog\django_project\blog\templates\blog" />
+      <recent name="C:\Users\Administrator\Documents\GitHub\django_blog\django_project\blog\templates\blog\static" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.practice 1">
     <configuration name="basic_practice_loops" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -150,7 +168,12 @@
       <workItem from="1640951294392" duration="1290000" />
       <workItem from="1641013864846" duration="34000" />
       <workItem from="1641016785638" duration="858000" />
-      <workItem from="1641017788753" duration="6792000" />
+      <workItem from="1641017788753" duration="8951000" />
+      <workItem from="1641039454732" duration="622000" />
+      <workItem from="1641087390329" duration="58000" />
+      <workItem from="1641096451826" duration="12318000" />
+      <workItem from="1641127036528" duration="2990000" />
+      <workItem from="1641133062357" duration="2053000" />
     </task>
     <servers />
   </component>
