@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
 <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Pattaya:300,400,600,700&amp;lang=en" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Carter+One:300,400,600,700&amp;lang=en" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,600,700&amp;lang=en" />
 
 
 
@@ -35,25 +37,31 @@
       <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarToggle">
-        <div class="navbar-nav mr-auto">
-          <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>
-          <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>
+
+          <div class="navbar-nav mr-auto">
+              <div class="pull-right" href="#">
+
+
+            <a class="nav-item nav-link" href="{% url 'blog-home' %}">Home</a>&nbsp;
+          <a class="nav-item nav-link" href="{% url 'blog-about' %}">About</a>&nbsp;
 
 
 
            {% if user.is_authenticated %}
-            <a class="nav-item nav-link" href="{% url 'post-create' %}">New Post</a>
-            <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
-        <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
+            <a class="nav-item nav-link" href="{% url 'post-create' %}">New Post</a>&nbsp;
+            <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>&nbsp;
+        <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>&nbsp;
             {% else %}
-                <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
-                <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
+                <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>&nbsp;
+                <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>&nbsp;
             {% endif %}
         </div>
             </div>
       </div>
     </div>
+            </div>
   </nav>
+
 </header>
 
     <main role="main" class="container">
@@ -70,13 +78,14 @@
     </div>
     <div class="col-md-4">
       <div class="content-section">
-        <h3>Our Sidebar</h3>
+        <h3>Categories</h3>
         <p class='text-muted'>
           <ul class="list-group">
-            <li class="list-group-item list-group-item-light">Latest Posts</li>
-            <li class="list-group-item list-group-item-light">Announcements</li>
-            <li class="list-group-item list-group-item-light">Calendars</li>
-            <li class="list-group-item list-group-item-light">etc</li>
+            <li class="list-group-item list-group-item-light">Top Posts</li>
+            <li class="list-group-item list-group-item-light">Programming</li>
+            <li class="list-group-item list-group-item-light">Math as a Hobby</li>
+            <li class="list-group-item list-group-item-light">Language Learning</li>
+
           </ul>
         </p>
       </div>

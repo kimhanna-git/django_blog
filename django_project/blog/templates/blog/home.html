@@ -1,14 +1,18 @@
 {% extends "blog/base.html" %}
 {% block content %}
     {% for post in posts %}
+
+
     <article class="media content-section">
+        <a class="pull-left" href="#">
         <img class ="img-circle article-img" src="{{ post.author.profile.image.url }}" width="150" height="150">
-        <div class="media-body">
+        </a>
+            <div class="media-body">
          <div class="article-metadata">
             <a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
-        <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
+        <a class="text-muted">{{ post.date_posted|date:"F d, Y" }}</a>
          </div>
-        <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
+        <h3><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h3>
         <p class="article-content">{{ post.content }}</p>
         </div>
     </article>
