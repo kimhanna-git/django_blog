@@ -1,2 +1,2 @@
 # django_blog
-It is my personal blog app for making records or my learning and writing 
+It is my personal blog app to make records or my learning and share anything new!
