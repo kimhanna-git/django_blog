@@ -1,0 +1,142 @@
+
+
+body {
+  background: #f5dd5d;
+  color: #333333;
+  margin-top: 1rem;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: #f5dd5d;
+  font-family : 'Carter One', serif
+
+}
+
+ul {
+  margin: 0;
+}
+
+.mr-2{
+  color: #f5dd5d;
+
+
+}
+
+
+.text-muted{
+  color: #f5dd5d;
+  font-size: 0.75em
+
+
+}
+
+.navbar-brand{
+  color: #f5dd5d;
+  font-family : 'Pattaya', serif;
+  font-size : 4.5em;
+
+
+}
+.nav-item{
+  color: #f5dd5d;
+  font-family : 'Pattaya', serif;
+  font-size : 2.2em;
+
+
+}
+
+
+
+.bg-steel {
+  background-color: saddlebrown;
+}
+
+
+
+.site-header .navbar-nav .nav-link {
+  color: antiquewhite;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: lightcoral;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: saddlebrown;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  color: antiquewhite;
+
+}
+
+.article-content{
+  color: antiquewhite;
+  font-family : 'Noto Sans', serif;
+  font-size : 1.2em
+
+}
+.list-group{
+  font-family : 'Noto Sans', serif;
+  font-size : 1em
+
+}
+
+
+
+
+.article-title:hover {
+  color: lightcoral;
+  text-decoration: none;
+}
+
+.article-content {
+  color: antiquewhite;
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+  text-decoration: none;
+  color: #f5dd5d;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 150px;
+  width: 150px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+.content-section {
+}

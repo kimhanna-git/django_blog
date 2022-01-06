@@ -34,7 +34,7 @@ ALLOWED_HOSTS = ['hannarepublic.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
-    
+
     'blog.apps.BlogConfig',
     'users.apps.UsersConfig',
     'crispy_forms',
